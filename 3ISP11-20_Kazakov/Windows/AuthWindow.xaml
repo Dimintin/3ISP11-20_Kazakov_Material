@@ -1,0 +1,66 @@
+﻿<Window x:Class="_3ISP11_20_Kazakov.Windows.AuthWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3ISP11_20_Kazakov.Windows"
+        mc:Ignorable="d"
+        Title="AuthWindow" 
+        Height="512" 
+        Width="596"
+        ResizeMode="NoResize">
+    <Grid x:Name="GDMain"
+          Background="IndianRed">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <StackPanel VerticalAlignment="Center"
+                    Margin="40 0">
+            <TextBlock Text="Авторизация"
+                       FontSize="25"
+                       Margin="0 50 0 0"
+                       Foreground="White"/>
+            <TextBox Width="240"
+                     Height="30"
+                     HorizontalAlignment="Left"
+                     Margin="0 40 0 5">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Width="240"
+                     Height="30"
+                     HorizontalAlignment="Left"
+                     Margin="0 5 0 40">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <Button Width="100"
+                    Height="30"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Center"
+                    Content="Войти"
+                    FontSize="15"
+                     HorizontalAlignment="Left"
+                    Background="{x:Null}"
+                    Foreground="White"
+                    BorderBrush="White">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </StackPanel>
+        <Border Grid.Row="1"
+                BorderThickness="2"
+                BorderBrush="LightGray"
+                Background="White"/>
+    </Grid>
+</Window>
